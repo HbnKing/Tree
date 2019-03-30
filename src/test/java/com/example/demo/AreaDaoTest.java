@@ -19,10 +19,10 @@ public class AreaDaoTest {
 	private AreaDao areaDao;
 	
 	@Test
-	@Ignore
+
 	public void testQueryArea() {
 		List<Area> areaList = areaDao.queryArea();
-		System.out.println(areaList.size());
+		System.out.println(areaDao.queryArea());
 		assertEquals( 2,areaList.size());
 	
 	}
@@ -65,7 +65,7 @@ public class AreaDaoTest {
 	 * 删除
 	*/
 	@Test
-		
+	@Ignore
 	public void testDeleteArea() {
 		int effectedNum = areaDao.deleteArea(4);
 		assertEquals(1,effectedNum);
