@@ -8,14 +8,14 @@
 /*     */ import com.William_Lin.tool.ScreenSize;
 /*     */ import com.William_Lin.tree.NodeTree;
 /*     */ import java.awt.BorderLayout;
-/*     */ import java.awt.Container;
+/*     */
 /*     */ import java.awt.Font;
 /*     */ import java.awt.event.ActionEvent;
 /*     */ import java.awt.event.ActionListener;
 /*     */ import java.net.URL;
 /*     */ import java.util.ArrayList;
 /*     */ import javax.swing.ImageIcon;
-/*     */ import javax.swing.JButton;
+/*     */
 /*     */ import javax.swing.JComboBox;
 /*     */ import javax.swing.JFrame;
 /*     */ import javax.swing.JLabel;
@@ -56,9 +56,9 @@
 /*  56 */     setDefaultCloseOperation(2);
 /*  57 */     setVisible(true);
 /*     */     
-/*  59 */     URL resource = getClass().getResource("/img/4.png");
+/*  59 */     URL resource = getClass().getResource("/src/img/4.png");
 /*  60 */     this.iconForButtonPanel = new ImageIcon(resource);
-/*  61 */     resource = getClass().getResource("/img/5.png");
+/*  61 */     resource = getClass().getResource("/src/img/5.png");
 /*  62 */     this.iconForDayPanel = new ImageIcon(resource);
 /*     */     
 /*  64 */     this.deathdayPanel = new MyPanel(this.iconForDayPanel);

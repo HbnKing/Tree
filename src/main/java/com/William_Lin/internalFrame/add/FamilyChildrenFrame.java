@@ -10,21 +10,21 @@
 /*     */ import com.William_Lin.tool.ScreenSize;
 /*     */ import com.William_Lin.tree.NodeTree;
 /*     */ import java.awt.BorderLayout;
-/*     */ import java.awt.Container;
+/*     */
 /*     */ import java.awt.event.ActionEvent;
 /*     */ import java.awt.event.ActionListener;
 /*     */ import java.net.URL;
 /*     */ import java.text.DecimalFormat;
-/*     */ import javax.swing.ButtonGroup;
+/*     */
 /*     */ import javax.swing.ImageIcon;
-/*     */ import javax.swing.JButton;
-/*     */ import javax.swing.JComboBox;
+/*     */
+/*     */
 /*     */ import javax.swing.JFrame;
 /*     */ import javax.swing.JOptionPane;
 /*     */ import javax.swing.JPanel;
-/*     */ import javax.swing.JRadioButton;
+/*     */
 /*     */ import javax.swing.JTextArea;
-/*     */ import javax.swing.JTextField;
+/*     */
 /*     */ import javax.swing.SwingUtilities;
 /*     */ 
 /*     */ 
@@ -54,11 +54,11 @@
 /*  54 */     setResizable(false);
 /*     */     
 /*     */ 
-/*  57 */     URL resource = getClass().getResource("/img/1.png");
+/*  57 */     URL resource = getClass().getResource("/src/img/1.png");
 /*  58 */     this.iconForNoticePanel = new ImageIcon(resource);
-/*  59 */     resource = getClass().getResource("/img/2.png");
+/*  59 */     resource = getClass().getResource("/src/img/2.png");
 /*  60 */     this.iconForInformationPanel = new ImageIcon(resource);
-/*  61 */     resource = getClass().getResource("/img/3.png");
+/*  61 */     resource = getClass().getResource("/src/img/3.png");
 /*  62 */     this.iconForButtonPanel = new ImageIcon(resource);
 /*     */     
 /*  64 */     this.noticePanel = new NoticePanel(this.iconForNoticePanel);

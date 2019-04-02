@@ -32,7 +32,7 @@
 /*     */ import com.William_Lin.tree.NodeTree;
 /*     */ import java.awt.BorderLayout;
 /*     */ import java.awt.Color;
-/*     */ import java.awt.Container;
+/*     */
 /*     */ import java.awt.Dimension;
 /*     */ import java.awt.EventQueue;
 /*     */ import java.awt.Font;
@@ -43,7 +43,7 @@
 /*     */ import java.awt.event.WindowEvent;
 /*     */ import java.awt.event.WindowStateListener;
 /*     */ import java.io.File;
-/*     */ import java.io.PrintStream;
+/*     */
 /*     */ import java.net.URL;
 /*     */ import java.text.DecimalFormat;
 /*     */ import java.util.ArrayList;
@@ -145,7 +145,9 @@
 /* 145 */     EventQueue.invokeLater(new Runnable() {
 /*     */       public void run() {
 /*     */         try {
+                    System.out.println("**********");
 /* 148 */           IndexFrame frame = new IndexFrame();
+                    System.out.println("**********");
 /* 149 */           frame.setVisible(true);
 /* 150 */           Object[] stringArray = { "新建家谱", "打开家谱" };
 /* 151 */           int response = JOptionPane.showOptionDialog(frame, 
@@ -170,7 +172,7 @@
 /*     */   
 /*     */ 
 /*     */ 
-/*     */   public IndexFrame()
+/*     */   public IndexFrame() throws InterruptedException
 /*     */   {
 /* 175 */     addWindowListener(new WindowAdapter()
 /*     */     {
@@ -206,14 +208,19 @@
 /* 206 */     setExtendedState(0);
 /* 207 */     setTitle("家谱管理系统");
 /* 208 */     setDefaultCloseOperation(0);
-/*     */     
-/* 210 */     URL resource = getClass().getResource("/img/top.png");
+/*     */
+                System.out.println("try  get  Resource");
+                
+/* 210 */       URL resource = getClass().getResource("/top.png");
+
+                System.out.println(resource.getFile().isEmpty());
+                Thread.sleep(10000);
 /* 211 */     this.iconForTopPanel = new ImageIcon(resource);
-/* 212 */     resource = getClass().getResource("/img/left.png");
+/* 212 */     resource = getClass().getResource("/left.png");
 /* 213 */     this.iconForLeftPanel = new ImageIcon(resource);
-/* 214 */     resource = getClass().getResource("/img/right.png");
+/* 214 */     resource = getClass().getResource("/right.png");
 /* 215 */     this.iconForRightPanel = new ImageIcon(resource);
-/* 216 */     resource = getClass().getResource("/img/back.png");
+/* 216 */     resource = getClass().getResource("/back.png");
 /* 217 */     this.iconForBackground = new ImageIcon(resource);
 /*     */     
 /* 219 */     this.centerPanel = new MyPanel(this.iconForBackground);
@@ -224,7 +231,7 @@
 /* 224 */     topPanel.setPreferredSize(new Dimension(0, 105));
 /* 225 */     getContentPane().add(topPanel, "North");
 /*     */     
-/* 227 */     resource = getClass().getResource("/img/logo.png");
+/* 227 */     resource = getClass().getResource("/logo.png");
 /* 228 */     ImageIcon icon = new ImageIcon(resource);
 /* 229 */     this.label = new MyLabel(icon);
 /* 230 */     this.label.setHorizontalAlignment(0);
@@ -247,7 +254,7 @@
 /* 247 */       0, null, null));
 /* 248 */     topPanel.add(iconPanel, "Center");
 /*     */     
-/* 250 */     resource = getClass().getResource("/img/newFamilyTree.png");
+/* 250 */     resource = getClass().getResource("/newFamilyTree.png");
 /* 251 */     icon = new ImageIcon(resource);
 /* 252 */     this.newFamilyTreeButton = new MyButton(icon);
 /*     */     
@@ -288,7 +295,7 @@
 /* 288 */     });
 /* 289 */     iconPanel.add(this.newFamilyTreeButton);
 /*     */     
-/* 291 */     resource = getClass().getResource("/img/saveFamilyTree.png");
+/* 291 */     resource = getClass().getResource("/saveFamilyTree.png");
 /* 292 */     icon = new ImageIcon(resource);
 /* 293 */     this.saveFamilyTreeButton = new MyButton(icon);
 /* 294 */     this.saveFamilyTreeButton.setMnemonic(83);
@@ -314,7 +321,7 @@
 /* 314 */     });
 /* 315 */     iconPanel.add(this.saveFamilyTreeButton);
 /*     */     
-/* 317 */     resource = getClass().getResource("/img/openFile.png");
+/* 317 */     resource = getClass().getResource("/openFile.png");
 /* 318 */     icon = new ImageIcon(resource);
 /* 319 */     this.openFileButton = new MyButton(icon);
 /* 320 */     this.openFileButton.setMnemonic(79);
@@ -363,7 +370,7 @@
 /* 363 */     });
 /* 364 */     iconPanel.add(this.openFileButton);
 /*     */     
-/* 366 */     resource = getClass().getResource("/img/showTree.png");
+/* 366 */     resource = getClass().getResource("/showTree.png");
 /* 367 */     icon = new ImageIcon(resource);
 /* 368 */     this.showTreeButton = new MyButton(icon);
 /* 369 */     this.showTreeButton.setMnemonic(68);
@@ -382,7 +389,7 @@
 /* 382 */     });
 /* 383 */     iconPanel.add(this.showTreeButton);
 /*     */     
-/* 385 */     resource = getClass().getResource("/img/about.png");
+/* 385 */     resource = getClass().getResource("/about.png");
 /* 386 */     icon = new ImageIcon(resource);
 /* 387 */     this.aboutButton = new MyButton(icon);
 /* 388 */     this.aboutButton.setMnemonic(73);
@@ -394,7 +401,7 @@
 /* 394 */     });
 /* 395 */     iconPanel.add(this.aboutButton);
 /*     */     
-/* 397 */     resource = getClass().getResource("/img/exitFamilyTree.png");
+/* 397 */     resource = getClass().getResource("/exitFamilyTree.png");
 /* 398 */     icon = new ImageIcon(resource);
 /* 399 */     this.exitFamilyTreeButton = new MyButton(icon);
 /* 400 */     this.exitFamilyTreeButton.setMnemonic(81);
