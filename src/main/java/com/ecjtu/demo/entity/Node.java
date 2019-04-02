@@ -18,13 +18,13 @@ public class Node  {
     private String familyID ;
 
     /**
-     * 微信用户唯一标示
+     * 微信用户唯一标识
      */
 
     private String wxID ;
 
     /**
-     * 姓名
+     * 人物姓名
      */
     private String name;
     /**
