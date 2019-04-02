@@ -57,9 +57,13 @@
 /*     */   private boolean hasChild;
 /*     */   private String telephone;
 /*     */   private String address;
+            /*left node   第一个孩子*/
 /*     */   Node leftNode;
+            /*right node  兄弟 自己的兄弟姐妹 */
 /*     */   Node rightNode;
+            /*spouseNode  妻子 */
 /*     */   Node spouseNode;
+            /*父代*/
 /*     */   Node fatherNode;
 /*     */
 /*     */   public void setLevel(int level)

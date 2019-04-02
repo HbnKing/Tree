@@ -52,11 +52,11 @@
 /*  52 */     setDefaultCloseOperation(2);
 /*  53 */     setVisible(true);
 /*  54 */     setResizable(false);
-/*  55 */     URL resource = getClass().getResource("/src/img/1.png");
+/*  55 */     URL resource = getClass().getResource("/1.png");
 /*  56 */     this.iconForNoticePanel = new ImageIcon(resource);
-/*  57 */     resource = getClass().getResource("/src/img/2.png");
+/*  57 */     resource = getClass().getResource("/2.png");
 /*  58 */     this.iconForInformationPanel = new ImageIcon(resource);
-/*  59 */     resource = getClass().getResource("/src/img/3.png");
+/*  59 */     resource = getClass().getResource("/3.png");
 /*  60 */     this.iconForButtonPanel = new ImageIcon(resource);
 /*     */     
 /*  62 */     this.noticePanel = new NoticePanel(this.iconForNoticePanel);

@@ -54,11 +54,11 @@
 /*  54 */     setResizable(false);
 /*     */     
 /*     */ 
-/*  57 */     URL resource = getClass().getResource("/src/img/1.png");
+/*  57 */     URL resource = getClass().getResource("/1.png");
 /*  58 */     this.iconForNoticePanel = new ImageIcon(resource);
-/*  59 */     resource = getClass().getResource("/src/img/2.png");
+/*  59 */     resource = getClass().getResource("/2.png");
 /*  60 */     this.iconForInformationPanel = new ImageIcon(resource);
-/*  61 */     resource = getClass().getResource("/src/img/3.png");
+/*  61 */     resource = getClass().getResource("/3.png");
 /*  62 */     this.iconForButtonPanel = new ImageIcon(resource);
 /*     */     
 /*  64 */     this.noticePanel = new NoticePanel(this.iconForNoticePanel);
