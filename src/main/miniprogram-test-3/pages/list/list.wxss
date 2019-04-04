@@ -40,5 +40,5 @@
   font-family: arial;/*标准字体*/
   color: rgb(0, 174, 255);
   display: inline-table;
-  	font-size:13px;
+  	font-size:10px;
 }

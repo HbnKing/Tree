@@ -4,6 +4,8 @@ import com.ecjtu.demo.entity.Area;
 
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
+@Repository
 public interface AreaDao {
     /**
      * 列出区域列表

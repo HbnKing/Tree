@@ -19,10 +19,10 @@ public class AreaServiceImpl implements AreaService {
     public List<Area> getAreaList() {
         // 返回所有的区域信息
         return areaDao.queryArea();
-    }
+	}
 
-    @Override
-    public Area getAreaById(int areaId) {
+	@Override
+	public Area getAreaById(int areaId) {
         return areaDao.queryAreaById(areaId);
     }
 

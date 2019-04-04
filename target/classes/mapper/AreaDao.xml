@@ -6,7 +6,7 @@
     <select id="queryArea" resultType="com.ecjtu.demo.entity.Area">
         SELECT area_id, area_name,
         priority, create_time, last_edit_time,wx_id,family_id,bornplace,
-        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address
+        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address,sex,education
      
         FROM new_table
         ORDER BY priority
@@ -23,7 +23,7 @@
     <select id="queryAreaById" resultType="com.ecjtu.demo.entity.Area">
         SELECT area_id, area_name,
         priority, create_time, last_edit_time,wx_id,family_id,bornplace,
-        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address
+        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address,sex,education
         FROM new_table
         WHERE
         area_id=#{areaId}
@@ -33,12 +33,12 @@
         INSERT INTO
         new_table(area_name,priority,
         create_time,last_edit_time,wx_id,family_id,bornplace,
-        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address)
+        birthday,deathday,level,height,job,top_title,isDead,married,hasChild,telephone,address,sex,education)
         VALUES
         (#{areaName},#{priority}, #{createTime},#{lastEditTime},
         #{wxId},#{familyId},#{bornplace},#{birthday},#{deathday},#{level},#{height},
-        #{job},#{topTitle},#{isdead},#{married},#{hasChild},#{telephone},#{address})
-   
+        #{job},#{topTitle},#{isdead},#{married},#{hasChild},#{telephone},#{address},#{sex},#{education})
+  
     </insert>
     <update id="updateArea" parameterType="com.ecjtu.demo.entity.Area">
         update new_table
@@ -59,8 +59,10 @@
                    <if test="married != null">married=#{married},</if>
             <if test="hasChild != null">hasChild=#{hasChild},</if>
             <if test="telephone != null">telephone=#{telephone},</if>
-            <if test="address != null">address=#{address}</if>
-       
+            <if test="address != null">address=#{address}</if>,
+             <if test="sex != null">sex=#{sex},</if>
+             <if test="education != null">education=#{education}</if>
+   
         </set>
         where area_id=#{areaId}
     </update>

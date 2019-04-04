@@ -1,0 +1,87 @@
+<!--pages/look/look.wxml-->
+
+
+ <view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="row">
+      <text>名字："{{areaName}}"</text>
+    </view>
+   
+    <view class="row">
+      <text>枚："{{priority}}" </text>
+    </view>
+
+    <view class="row">
+      <text>家谱编号："{{familyId}}"</text>
+    </view>
+
+   <view class="row">
+      <text>微信id：" {{wxId}}"</text>
+    </view>
+
+
+    <view class="row">
+      <text>出生地："{{bornplace}}"</text>
+    </view>
+
+    <view class="row">
+      <text>生日："{{birthday}}"</text>
+    </view>
+
+    <view class="row">
+      <text>去世时间："{{deathday}}"</text>
+    </view>
+
+    <view class="row">
+      <text>第几代："{{level}}"</text>
+    </view>
+
+   <view class="row">
+      <text>性别："{{sex}}"</text>
+    </view> 
+
+    <view class="row">
+      <text>身高："{{height}}" </text>
+    </view>
+
+   <view class="row">
+      <text>工作："{{job}}"</text>
+    </view>
+
+  <view class="row">
+      <text>教育程度："{{education}}"</text>
+   
+    </view>
+
+    <view class="row">
+      <text>最高职称："{{topTitle}}" </text>
+    </view>
+
+
+    <view class="row">
+      <text>是否死亡："{{isdead}}"</text>
+    </view>
+
+    <view class="row">
+      <text>是否已经结婚："{{married}}" </text>
+    </view>
+
+    <view class="row">
+      <text>是否有小孩："{{hasChild}}"</text>
+    </view>
+
+    <view class="row">
+      <text>电话："{{telephone}}"</text>
+    </view>
+
+    <view class="row">
+      <text>住址："{{address}}" </text>
+    </view>
+    <!-- <view class="row">
+      <button type="primary" form-type="submit">提交</button>
+      <button type="primary" form-type="reset">清空</button>
+    </view> -->
+
+  </form>
+</view>
+	

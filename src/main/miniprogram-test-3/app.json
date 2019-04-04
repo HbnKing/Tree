@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/wxlogin/wxlogin",
     "pages/list/list",
-    "pages/operation/operation"
+    "pages/operation/operation",
+    "pages/look/look"
   ],
   "window": {
     "backgroundTextStyle": "light",
