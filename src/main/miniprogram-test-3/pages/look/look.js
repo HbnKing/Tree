@@ -6,7 +6,7 @@ Page({
    */
   data: {
     areaId: undefined,
-    areaName: '',   
+    areaName: '',
     priority: '',
     addUrl: "http://127.0.0.1:9010/demo/superadmin/addarea",
     modifyUrl: "http://127.0.0.1:9010/demo/superadmin/modifyarea"
@@ -39,6 +39,7 @@ Page({
           });
         } else {
           that.setData({
+            
             areaName: area.areaName,
             priority: area.priority,
             familyId: area.familyId,

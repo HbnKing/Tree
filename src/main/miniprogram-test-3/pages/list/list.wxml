@@ -4,7 +4,7 @@
     <text class="column">ID</text>
     <text class="column">名前</text>
     <text class="column">家族编号</text>
-     <text class="column">微信id</text>
+     <text class="column">性别</text>
     <text class="link-column">操作</text>
   </view>
 
@@ -16,9 +16,10 @@
             <text class="column">{{item.areaId}}</text>
             <text class="column">{{item.areaName}}</text>
             <text class="column">{{item.familyId}}</text>
-            <text class="column">{{item.married}}</text>
+            <text class="column">{{item.sex}}</text>
             <view class="link-column">
-              <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">修正</navigator>|
+              <navigator class="link" url="../look/look?areaId={{item.areaId}}">查看</navigator>|
+              <navigator class="link" url="../operation/operation?areaId={{item.areaId}}">修改</navigator>|
               <text class="link" bindtap="deleteArea" data-areaid="{{item.areaId}}" data-areaname="{{item.areaName}}" data-index="{{index}}">削除</text>
             </view>
           </view>

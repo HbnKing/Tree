@@ -34,7 +34,7 @@ public class Area {
 	/**
 	 * 性别
 	 */
-	private SexEnum sexEnum;
+	private SexEnum sex;
 	/**
 	 * 身高
 	 */
@@ -46,7 +46,7 @@ public class Area {
 	/**
 	 * 教育程度
 	 */
-	private byte education;
+	private EducationEnum education;
 	/**
 	 * 最高职称
 	 */
@@ -163,12 +163,13 @@ public class Area {
 		this.level = level;
 	}
 
-	public SexEnum getSexEnum() {
-		return sexEnum;
+	
+	public SexEnum getSex() {
+		return sex;
 	}
 
-	public void setSexEnum(SexEnum  sexEnum) {
-		this.sexEnum = sexEnum; ;
+	public void setSex(SexEnum sex) {
+		this.sex = sex;
 	}
 
 	public double getHeight() {
@@ -187,11 +188,16 @@ public class Area {
 		this.job = job;
 	}
 
-	public byte getEducation() {
+	
+	
+	
+	
+
+	public EducationEnum getEducation() {
 		return education;
 	}
 
-	public void setEducation(byte education) {
+	public void setEducation(EducationEnum education) {
 		this.education = education;
 	}
 
