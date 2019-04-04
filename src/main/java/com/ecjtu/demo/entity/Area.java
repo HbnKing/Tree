@@ -34,7 +34,7 @@ public class Area {
 	/**
 	 * 性别
 	 */
-	private Sex sex;
+	private SexEnum sexEnum;
 	/**
 	 * 身高
 	 */
@@ -163,12 +163,12 @@ public class Area {
 		this.level = level;
 	}
 
-	public Sex getSex() {
-		return sex;
+	public SexEnum getSexEnum() {
+		return sexEnum;
 	}
 
-	public void setSex(Sex  sex) {
-		this.sex = sex; ;
+	public void setSexEnum(SexEnum  sexEnum) {
+		this.sexEnum = sexEnum; ;
 	}
 
 	public double getHeight() {
