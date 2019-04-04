@@ -7,16 +7,16 @@
 /*    */ import com.William_Lin.tool.ScreenSize;
 /*    */ import com.William_Lin.tree.NodeTree;
 /*    */ import java.awt.BorderLayout;
-/*    */ import java.awt.Container;
+/*    */
 /*    */ import java.awt.event.ActionEvent;
 /*    */ import java.awt.event.ActionListener;
 /*    */ import java.net.URL;
 /*    */ import java.util.ArrayList;
 /*    */ import javax.swing.ImageIcon;
-/*    */ import javax.swing.JButton;
-/*    */ import javax.swing.JComboBox;
+/*    */
+/*    */
 /*    */ import javax.swing.JFrame;
-/*    */ import javax.swing.JLabel;
+/*    */
 /*    */ import javax.swing.JPanel;
 /*    */ import javax.swing.JTextArea;
 /*    */ import javax.swing.SwingUtilities;
@@ -45,9 +45,9 @@
 /* 45 */     setDefaultCloseOperation(2);
 /* 46 */     setVisible(true);
 /*    */     
-/* 48 */     URL resource = getClass().getResource("/img/4.png");
+/* 48 */     URL resource = getClass().getResource("/src/img/4.png");
 /* 49 */     this.iconForButtonPanel = new ImageIcon(resource);
-/* 50 */     resource = getClass().getResource("/img/5.png");
+/* 50 */     resource = getClass().getResource("/src/img/5.png");
 /* 51 */     this.iconForComboBox = new ImageIcon(resource);
 /*    */     
 /* 53 */     this.SearchByEducationComboBox = new ComboBoxSearchPanel(this.iconForComboBox);

@@ -40,7 +40,7 @@
 /* 40 */     setVisible(true);
 /* 41 */     setResizable(false);
 /*    */     
-/* 43 */     URL resource = getClass().getResource("/img/back.png");
+/* 43 */     URL resource = getClass().getResource("/src/img/back.png");
 /* 44 */     this.iconForAboutFrame = new ImageIcon(resource);
 /*    */     
 /* 46 */     this.aboutPanel = new MyPanel(this.iconForAboutFrame);

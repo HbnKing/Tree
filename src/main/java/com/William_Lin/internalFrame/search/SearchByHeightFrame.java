@@ -8,7 +8,7 @@
 /*     */ import com.William_Lin.tree.NodeTree;
 /*     */ import java.awt.BorderLayout;
 /*     */ import java.awt.Color;
-/*     */ import java.awt.Container;
+/*     */
 /*     */ import java.awt.Dimension;
 /*     */ import java.awt.FlowLayout;
 /*     */ import java.awt.Font;
@@ -17,7 +17,7 @@
 /*     */ import java.net.URL;
 /*     */ import java.util.ArrayList;
 /*     */ import javax.swing.ImageIcon;
-/*     */ import javax.swing.JButton;
+/*     */
 /*     */ import javax.swing.JComboBox;
 /*     */ import javax.swing.JFrame;
 /*     */ import javax.swing.JLabel;
@@ -64,9 +64,9 @@
 /*  64 */     setDefaultCloseOperation(2);
 /*  65 */     setVisible(true);
 /*     */     
-/*  67 */     URL resource = getClass().getResource("/img/4.png");
+/*  67 */     URL resource = getClass().getResource("/src/img/4.png");
 /*  68 */     this.iconForButtonPanel = new ImageIcon(resource);
-/*  69 */     resource = getClass().getResource("/img/5.png");
+/*  69 */     resource = getClass().getResource("/src/img/5.png");
 /*  70 */     this.iconForHeight = new ImageIcon(resource);
 /*     */     
 /*  72 */     this.buttonPanel = new ButtonPanel(this.iconForButtonPanel);

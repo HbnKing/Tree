@@ -8,18 +8,18 @@
 /*    */ import com.William_Lin.tool.TextFieldSearchPanel;
 /*    */ import com.William_Lin.tree.NodeTree;
 /*    */ import java.awt.BorderLayout;
-/*    */ import java.awt.Container;
+/*    */
 /*    */ import java.awt.event.ActionEvent;
 /*    */ import java.awt.event.ActionListener;
 /*    */ import java.net.URL;
 /*    */ import java.util.ArrayList;
 /*    */ import javax.swing.ImageIcon;
-/*    */ import javax.swing.JButton;
+/*    */
 /*    */ import javax.swing.JFrame;
-/*    */ import javax.swing.JLabel;
+/*    */
 /*    */ import javax.swing.JPanel;
 /*    */ import javax.swing.JTextArea;
-/*    */ import javax.swing.JTextField;
+/*    */
 /*    */ import javax.swing.SwingUtilities;
 /*    */ 
 /*    */ 
@@ -46,9 +46,9 @@
 /* 46 */     setDefaultCloseOperation(2);
 /* 47 */     setVisible(true);
 /*    */     
-/* 49 */     URL resource = getClass().getResource("/img/4.png");
+/* 49 */     URL resource = getClass().getResource("/src/img/4.png");
 /* 50 */     this.iconForButtonPanel = new ImageIcon(resource);
-/* 51 */     resource = getClass().getResource("/img/5.png");
+/* 51 */     resource = getClass().getResource("/src/img/5.png");
 /* 52 */     this.iconForTextField1 = new ImageIcon(resource);
 /*    */     
 /* 54 */     this.SearchByAddressPanel = new TextFieldSearchPanel(this.iconForTextField1);
