@@ -163,14 +163,12 @@ public class Area {
 		this.level = level;
 	}
 
-
-
 	public Sex getSex() {
-		return sex.MAN;
+		return sex;
 	}
 
-	public void setSex(String  sex) {
-		this.sex = Sex.valueOf(sex); ;
+	public void setSex(Sex  sex) {
+		this.sex = sex; ;
 	}
 
 	public double getHeight() {
