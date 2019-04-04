@@ -4,11 +4,8 @@ import com.ecjtu.demo.entity.Area;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
-<<<<<<< HEAD
-=======
 
 import org.springframework.stereotype.Repository;
->>>>>>> 24125624c5fa129a01a1d378d2090947ec609cfb
 @Repository
 public interface AreaDao {
     /**
