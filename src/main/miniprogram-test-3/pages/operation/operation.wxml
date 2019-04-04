@@ -1,0 +1,222 @@
+<!--pages/operation.wxml-->
+ <view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="row">
+      <text>名字：</text>
+      <input type="text" name="areaName" placeholder="{{item.areaName}}" value="{{areaName}}" />
+    </view>
+    <view class="row">
+      <text>枚：</text>
+
+      <input type="number" name="priority" placeholder="{{item.areaId}}" value="{{priority}}" />
+    </view>
+
+    <view class="row">
+      <text>家谱编号：</text>
+
+      <input type="number" name="familyId" placeholder="{{item.familyId}}" value="{{familyId}}" />
+    </view>
+
+
+   <view class="row">
+      <text>微信id</text>
+
+      <input type="number" name="wxId" placeholder="{{item.wxId}}"  value="{{wxId}}" />
+    </view>
+
+
+
+
+
+
+
+
+<view class="row">
+      <text>出生地：</text>
+      <input type="text" name="bornplace" placeholder="{{item.bornplace}}" value="{{bornplace}}" />
+    </view>
+
+    <view class="row">
+      <text>生日：</text>
+      <input type="text" name="birthday" placeholder="请输入区域名" value="{{birthday}}" />
+    </view>
+
+    <view class="row">
+      <text>去世时间：</text>
+      <input type="text" name="deathday" placeholder="请输入区域名" value="{{deathday}}" />
+    </view>
+
+  <view class="row">
+      <text>第几代：</text>
+      <input type="text" name="level" placeholder="请输入区域名" value="{{level}}" />
+    </view>
+
+  <view class="row">
+      <text>性别：</text>
+      <input type="text" name="sex" placeholder="请输入区域名" value="{{sex}}" />
+    </view>
+
+  <view class="row">
+      <text>身高：</text>
+      <input type="text" name="height" placeholder="请输入区域名" value="{{height}}" />
+    </view>
+
+  <view class="row">
+      <text>工作：</text>
+      <input type="text" name="job" placeholder="请输入区域名" value="{{job}}" />
+    </view>
+
+  <!-- <view class="row">
+      <text>教育程度：</text>
+      <input type="text" name="education" placeholder="请输入区域名" value="{{education}}" />
+    </view> -->
+
+  <view class="row">
+      <text>最高职称：</text>
+      <input type="text" name="topTitle" placeholder="请输入区域名" value="{{topTitle}}" />
+    </view>
+
+
+  <view class="row">
+      <text>是否死亡：</text>
+      <input type="text" name="isdead" placeholder="请输入区域名" 
+      value="{{isdead}}" />
+    </view>
+
+  <view class="row">
+      <text>是否已经结婚：</text>
+      <input type="text" name="married" placeholder="请输入区域名" value="{{married}}" />
+    </view>
+
+  <view class="row">
+      <text>是否有小孩：</text>
+      <input type="text" name="hasChild" placeholder="请输入区域名" value="{{hasChild}}" />
+    </view>
+
+  <view class="row">
+      <text>电话：</text>
+      <input type="text" name="telephone" placeholder="请输入区域名" value="{{telephone}}" />
+    </view>
+
+    <view class="row">
+      <text>住址：</text>
+
+      <input type="number" name="address" placeholder="{{item.address}}" value="{{address}}" />
+    </view>
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+    <view class="row">
+      <button type="primary" form-type="submit">提交</button>
+      <button type="primary" form-type="reset">清空</button>
+    </view>
+
+  </form>
+</view>
+	<!--pages/operation.wxml-->
+<!-- <view class="container">
+  <form bindsubmit="formSubmit" bindreset="formReset">
+    <view class="row">
+      <text>家谱编号：</text>
+      <input type="text" name="familyId " placeholder="{{wxId}}" value="{{wxId}}" />
+    </view>
+
+
+	<view class="row">
+      <text>名字：</text>
+      <input type="text" name="areaName" placeholder="请输入区域名" value="{{areaName}}" />
+    </view>
+
+    <view class="row">
+      <text>出生地：</text>
+      <input type="text" name="bornplace" placeholder="请输入区域名" value="{{bornplace}}" />
+    </view>
+
+    <view class="row">
+      <text>生日：</text>
+      <input type="text" name="birthday" placeholder="请输入区域名" value="{{birthday}}" />
+    </view>
+
+    <view class="row">
+      <text>去世时间：</text>
+      <input type="text" name="deathday" placeholder="请输入区域名" value="{{deathday}}" />
+    </view>
+
+  <view class="row">
+      <text>第几代：</text>
+      <input type="text" name="level" placeholder="请输入区域名" value="{{level}}" />
+    </view>
+
+  <view class="row">
+      <text>性别：</text>
+      <input type="text" name="sex" placeholder="请输入区域名" value="{{sex}}" />
+    </view>
+
+  <view class="row">
+      <text>身高：</text>
+      <input type="text" name="height" placeholder="请输入区域名" value="{{height}}" />
+    </view>
+
+  <view class="row">
+      <text>工作：</text>
+      <input type="text" name="job" placeholder="请输入区域名" value="{{job}}" />
+    </view>
+
+  <view class="row">
+      <text>教育程度：</text>
+      <input type="text" name="education" placeholder="请输入区域名" value="{{education}}" />
+    </view>
+
+  <view class="row">
+      <text>最高职称：</text>
+      <input type="text" name="top_title" placeholder="请输入区域名" value="{{top_title}}" />
+    </view>
+
+
+  <view class="row">
+      <text>是否死亡：</text>
+      <input type="text" name="isDead" placeholder="请输入区域名" value="{{isDead}}" />
+    </view>
+
+  <view class="row">
+      <text>是否已经结婚：</text>
+      <input type="text" name="married" placeholder="请输入区域名" value="{{married}}" />
+    </view>
+
+  <view class="row">
+      <text>是否有小孩：</text>
+      <input type="text" name="hasChild" placeholder="请输入区域名" value="{{hasChild}}" />
+    </view>
+
+  <view class="row">
+      <text>电话：</text>
+      <input type="text" name="telephone" placeholder="请输入区域名" value="{{telephone}}" />
+    </view>
+
+    <view class="row">
+      <text>住址：</text>
+
+      <input type="number" name="address" placeholder="{{item.areaId}}" value="{{priority}}" />
+    </view>
+
+
+
+    <view class="row">
+      <button type="primary" form-type="submit">提交</button>
+      <button type="primary" form-type="reset">清空</button>
+    </view>
+
+  </form>
+</view> -->

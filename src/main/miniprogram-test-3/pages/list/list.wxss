@@ -1,0 +1,44 @@
+/* pages/list/list.wxss */
+
+
+
+.widget {
+  font-family: arial;/*标准字体*/
+  position: relative;
+  margin-top: 5rpx;
+  margin-bottom: 5rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 20rpx;
+  padding-right: 40rpx;
+  border: #ddd 1px solid;
+  	font-size:10px;
+}
+
+.container {
+  height: 100%;
+  display: table;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  text-align: center;
+}
+
+.column {
+  width: 5rem;
+  display: table-cell;
+}
+
+.link-column {
+  width: 6rem;
+  display: table-cell;
+}
+
+.link {
+  font-family: arial;/*标准字体*/
+  color: rgb(0, 174, 255);
+  display: inline-table;
+  	font-size:13px;
+}
