@@ -1,8 +1,6 @@
 //index.js
 //获取应用实例
-var app = getApp()
-var tabbar = require('../../component/navbar/navbar.js');
-
+const app = getApp()
 
 Page({
   data: {
@@ -21,10 +19,9 @@ Page({
       },
     ],
     motto: 'Hello World',
-    userInfo: {},
+    userInfo: null,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
-
   },
   chooseImg: function(e) {
     this.setData({
@@ -55,9 +52,8 @@ Page({
     })
   },
   onLoad: function() {
-    app.editTabBar2();
-    console.log("try  edit tabbar")
     if (app.globalData.userInfo) {
+      console.log(app.globalData.userInfo)
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
