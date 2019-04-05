@@ -1,0 +1,28 @@
+/*自定义底部导航  */
+
+
+.footer {
+height:110rpx;
+width:100%;
+position: fixed;
+bottom:0;
+left:0;
+border-top:1px solid #ddd;
+}
+.footer_list{
+float: left;
+width:17%;
+height:100%;
+text-align:center;
+padding-top:25rpx;
+margin-left:60rpx;
+margin-right:62rpx;
+}
+.footer-image{
+   width:40%;
+   height:45%;
+}
+.footer-text{
+    font-size: 22rpx;
+}
+/*底部导航  */

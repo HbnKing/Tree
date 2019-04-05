@@ -23,7 +23,7 @@ Page({
 
         // 调用后端，获取微信的session_key, secret
         wx.request({
-          url: "http://localhost:9011/wxLogin?code=" + code,
+          url: "http://localhost:9010/wxLogin?code=" + code,
           method: "POST",
           success: function (result) {
             console.log(result);
