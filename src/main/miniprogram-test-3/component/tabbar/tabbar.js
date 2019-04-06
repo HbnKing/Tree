@@ -3,7 +3,7 @@ Page({
     curIdx: 0,
     listInfo: [
       {
-        imgUrl: '../../images/a.jpg',
+        imgUrl: '../../images/search.png',
         curUrl: '../../images/a.jpg',
       },
       {

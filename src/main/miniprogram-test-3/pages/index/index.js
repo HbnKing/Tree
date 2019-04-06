@@ -1,6 +1,8 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var tabbar = require("../../component/tabbar/tabbar")
+console.log("this data is "+ tabbar.listInfo)
 
 Page({
   data: {
