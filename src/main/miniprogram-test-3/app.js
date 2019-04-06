@@ -1,5 +1,7 @@
 //app.js
 App({
+
+  //监听小程序初始化。
   onLaunch: function () {
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
@@ -33,6 +35,17 @@ App({
       }
     })
   },
+
+  onShow(options) {
+    // Do something when show.
+  },
+  onHide() {
+    // Do something when hide.
+  },
+  onError(msg) {
+    console.log(msg)
+  },
+  globalData: 'I am global data'
   
   
 })
