@@ -1,10 +1,10 @@
-package com.imooc.common;
-
-import java.util.List;
+package com.ecjtu.demo.common;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.util.List;
 
 /**
  * 

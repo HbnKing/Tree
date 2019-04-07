@@ -1,4 +1,6 @@
-package com.imooc.common;
+package com.ecjtu.demo.common;
+
+import org.springframework.http.HttpHeaders;
 
 /**
  * @Description: 自定义响应数据结构
@@ -13,6 +15,8 @@ package com.imooc.common;
  */
 public class IMoocJSONResult {
 
+    //响应头
+    private HttpHeaders headers ;
     // 响应业务状态
     private Integer status;
 
@@ -31,6 +35,10 @@ public class IMoocJSONResult {
     public static IMoocJSONResult ok(Object data) {
         return new IMoocJSONResult(data);
     }
+    public static IMoocJSONResult ok(HttpHeaders headers) {
+        return new IMoocJSONResult(headers);
+    }
+
 
     public static IMoocJSONResult ok() {
         return new IMoocJSONResult(null);

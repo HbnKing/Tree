@@ -1,4 +1,4 @@
-package com.imooc.model;
+package com.ecjtu.demo.model;
 
 public class WXSessionModel {
 
