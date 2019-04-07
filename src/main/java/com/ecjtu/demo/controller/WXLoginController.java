@@ -4,6 +4,7 @@ package com.ecjtu.demo.controller;
 import com.ecjtu.demo.common.*;
 import com.ecjtu.demo.model.WXSessionModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.web.ServerProperties;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -76,10 +77,12 @@ public class WXLoginController {
 	 * @param code
 	 * @return
 	 */
+	//@RequestMapping("/wxLogin" )
 	@PostMapping("/wxLogin" )
-	public ResponseEntity<IMoocJSONResult> wxLogin(String code) {
+	public ResponseEntity<IMoocJSONResult> wxLogin(@RequestParam (value = "code")String code) {
 
 		System.out.println("wxlogin - code: " + code);
+		//System.out.println("client session is :" +clientSession);
 
 //		https://api.weixin.qq.com/sns/jscode2session?
 //				appid=APPID&
@@ -113,8 +116,12 @@ public class WXLoginController {
 //							1000 * 60 * 30);
 
 
-
+		/**
+		 * 保存 session_key  和  openId  到 缓存中
+		 */
 		guavaOperator.setData(model.getSession_key(),model.getOpenid());
+
+
 
 		return ResponseEntity.ok().headers(httpHeaders).body(IMoocJSONResult.ok());
 	}
