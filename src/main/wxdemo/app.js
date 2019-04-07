@@ -19,7 +19,7 @@ App({
   onError(msg) {
     console.log(msg)
   },
-
+ 
   getUserInfo: function (cb) {
     var that = this
     if (this.globalData.userInfo) {
