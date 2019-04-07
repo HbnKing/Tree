@@ -1,0 +1,34 @@
+<searchbar bindsearchinput="onSearchSnputEvent"></searchbar>
+<view class='item-list-group'>
+  <view class='item-group'>
+    <image
+    src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554668260132&di=c32ffab26946fb3d22c90d60b6b25d06&imgtype=0&src=http%3A%2F%2Fimg2.a0bi.com%2Fupload%2Fttq%2F20160426%2F1461671637474.jpg' class='thumbnail'></image>
+    <view class='info-group'>
+      <view class='kanojo'>mio</view>
+      <view class='rate-year'>可爱</view>
+    </view>
+  </view>
+  <view class='item-group'>
+    <image
+    src='http://n1.itc.cn/img8/wb/recom/2016/02/11/145518263939687475.GIF' class='thumbnail'></image>
+    <view class='info-group'>
+      <view class='title'>蘭蘭</view>
+      <view class='rate-year'>可爱</view>
+    </view>
+  </view>
+
+    <view class='item-group'>
+    <image
+    src='http://img.qqzhi.com/upload/img_4_1747127734D1504719528_23.jpg' class='thumbnail'></image>
+    <view class='info-group'>
+      <view class='title'>ことり</view>
+      <view class='rate-year'>可爱</view>
+    </view>
+  </view>
+  
+  
+</view>
+
+
+
+

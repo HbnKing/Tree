@@ -1,0 +1,108 @@
+page {
+  height: 100%;
+  background-color: black;
+  
+}
+
+
+
+.kuai{
+  
+ color: #AFDFE4;
+   font-family: STHeiti;
+   font-size: 60rpx;
+  height: 160rpx;
+  line-height: 240rpx;
+  position: relative;
+  left: 28rpx; 
+  width: 200px;
+  box-sizing: border-box;
+}
+.delete_list {
+  padding: 0 0 0 0rpx;
+  margin: 5rpx 3rpx 0;
+  background-color:rgb(49, 48, 46);
+  width: 99%;
+
+  box-sizing: border-box;
+  
+ 
+}
+.delete_list>.list {
+  
+  height: 120rpx;
+  line-height: 120rpx;
+  
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px -4px rgba(155, 150, 150, 0.3); /*模拟一像素边框*/
+ /* border: 1rpx  solid #AFDFE4;*/
+ 
+}
+.delete_list>.list>.content {
+  flex: 1;
+  transform: translateX(240rpx);
+  margin-left: -240rpx;
+  /*background-color: #fff;*/
+  transition: all 0.2s ease-in-out;
+  
+}
+.delete_list>.list>.contents {
+  flex: 1;
+  transform: translateX(240rpx);
+  margin-left: -240rpx;
+  /*background-color: #fff;*/
+  transition: all 0.2s ease-in-out;
+  
+}
+.delete_list>.list>.contentss {
+  flex: 1;
+  transform: translateX(240rpx);
+  margin-left: -240rpx;
+  /*background-color: #fff;*/
+  transition: all 0.2s ease-in-out;
+
+}
+.delete_list>.list>.delete {
+  width: 240rpx;
+  text-align: center;  
+  color: #fff;
+  background-color: #E64340;
+  transform: translateX(240rpx);
+  transition: all 0.2s ease-in-out;
+  
+}
+.delete_list>.list>.content{
+  height: 0rpx;
+  line-height: 120rpx;
+  font-size: 60rpx;
+  color: #AFDFE4;
+font-family: STHeiti;
+ position: relative;
+  left: 28rpx; 
+}
+.delete_list>.list>.contents{
+  height: 0px;
+  line-height: 180rpx;
+  font-size: 32rpx;
+  color: #AFDFE4;
+  float: right;
+   position: relative;
+  left: 244rpx; 
+
+  font-family: STHeiti;
+
+}
+.delete_list>.list>.contentss{
+  height: 0rpx;
+  line-height: 76rpx;
+  font-size: 24rpx;
+  color: #AFDFE4;
+  float: right;
+   position: relative;
+  left: 68rpx; 
+
+  font-family: STHeiti;
+
+}

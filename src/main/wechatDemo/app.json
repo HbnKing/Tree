@@ -1,14 +1,38 @@
 {
   "pages": [
+    "pages/list/list",
+    "pages/wxlogin/wxlogin",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/list/list",
-    "pages/operation/operation"
-  ],
+    "pages/operation/operation",
+    "pages/look/look"
+  
+  ],"tabBar": {
+    "color": "#a9b7b7",
+    "selectedColor": "#11cd6e",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "images/首页_填充.png",
+        "iconPath": "images/首页_填充.png",
+        "pagePath": "pages/list/list",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "images/查话费_填充.png",
+        "iconPath": "images/查话费_填充.png",
+        "pagePath": "pages/logs/logs",
+        "text": "查询"
+      }
+      
+    ]
+  },
+  
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle": "black"
-  }
+  },
+  "debug": true
 }

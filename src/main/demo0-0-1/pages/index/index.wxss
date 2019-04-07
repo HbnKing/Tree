@@ -1,0 +1,43 @@
+
+.blue-group{
+  background:#1e82d2;
+  padding: 20rpx;
+}
+
+.blue-group .top-group {
+
+  height: 58rpx;
+  width: 100%;
+  display: flex;
+}
+
+.top-group .search-group{
+    flex: 1;
+    display: flex;
+} 
+
+.top-group .search-group .search-input{
+  flex: 1;
+    background:#1a71b7; 
+   border-radius: 4px;/* 边框 */
+   padding: 0 10px;  /*文字边距*/
+   font-size: 24rpx;
+}
+.top-group .search-group .placeholder-input{
+  color: #fff;
+}
+
+.top-group .more-group{
+  flex-basis: 180rpx;
+  display: flex;
+  justify-content: space-evenly ;  /*布局*/
+
+
+}
+
+.top-group .more-group image{
+  /* 大小 */
+  width: 50rpx;
+  height: 50rpx;
+   
+}

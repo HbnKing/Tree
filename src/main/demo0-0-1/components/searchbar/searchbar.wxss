@@ -1,0 +1,30 @@
+.searchbar{
+  background-color:#41be57;
+  padding:20rpx; 
+}
+.search-navigator{
+  width: 100%;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  /* 设置图片 */
+  /* background-image: ("");
+  background-position: center center;
+  background-repeat:no-repeat; */
+}
+.search-input-group{
+   width: 100%;
+  height: 60rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+  padding: 10rpx 20rpx;  /*上下左右间距*/
+  box-sizing: border-box;
+}
+
+.search-input{
+  min-height: 40rpx;
+  height: 40rpx;
+  font-size: 28rpx;/* 设置文字大小 */
+} 
+
+

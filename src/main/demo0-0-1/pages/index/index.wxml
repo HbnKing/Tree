@@ -1,0 +1,16 @@
+<view class="container">
+  <view class='blue-group'>
+    <view class='top-group'>
+     <view class='search-group'>
+        <input class='search-input' placeholder-class='placeholder-input'  placeholder='搜索'></input>
+
+     </view>
+     <view class='more-group'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554639233690&di=198da98933717cb8c8c5162804f04b02&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fa6781468ac5706910f4bec436e47a84095b25c2214f9d4-DTuhmh_fw658'></image>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1554639233693&di=64ca51683b9d17096a179d2d46f8156a&imgtype=0&src=http%3A%2F%2Fwww.333cn.com%2Fgraphic%2Fhyzx%2Fh005%2Fh06%2Fimg201303041430541.jpg'></image>
+      </view>
+    </view> 
+  </view>
+
+
+</view>
