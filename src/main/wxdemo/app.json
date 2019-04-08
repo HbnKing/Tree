@@ -4,7 +4,12 @@
     "index/index",
     "index/index2",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+   
+    "pages/comment/comment",
+    "pages/detail/detail",
+    "pages/search/search",
+    "pages/list/list"
   ],
   "tabBar": {
     "custom": true,
@@ -34,9 +39,10 @@
     ]
   },
   "window":{
-    "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
+      "backgroundTextStyle": "light",
+      "navigationBarBackgroundColor": "#41be57",
+      "navigationBarTitleText": "豆瓣评分",
+      "navigationBarTextStyle": "white"
+    
   }
 }
