@@ -1,6 +1,7 @@
 package com.ecjtu.demo.dao;
 
 import com.ecjtu.demo.entity.Area;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

@@ -1,27 +1,66 @@
 //index.js
 //获取应用实例
 const app = getApp()
+var tabbar = require("../../component/tabbar/tabbar")
+console.log("this data is "+ tabbar.listInfo)
 
 Page({
   data: {
+    curIdx: 0,
+    listInfo: [{
+        imgUrl: '../../images/a.jpg',
+        curUrl: '../../images/a.jpg',
+      },
+      {
+        imgUrl: '../../images/a.jpg',
+        curUrl: '../../images/a.jpg',
+      },
+      {
+        imgUrl: '../../images/a.jpg',
+        curUrl: '../../images/a.jpg',
+      },
+    ],
     motto: 'Hello World',
-    userInfo: {},
+    userInfo: null,
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
+  chooseImg: function(e) {
+    this.setData({
+      curIdx: e.currentTarget.dataset.current
+    })
+    //  console.log(e)
+    console.log(this.data.curIdx)
+    if (this.data.curIdx == 0) {
+      wx.navigateTo({
+        url: '../../main/main',
+      })
+    } else if (this.data.curIdx == 1) {
+      wx.navigateTo({
+        url: '../AR/AR',
+      })
+    } else {
+      wx.navigateTo({
+        url: '../mailer/mailer',
+      })
+    }
+  },
+
+
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
-      url: '../list/list'
+      url: '../wxlogin/wxlogin'
     })
   },
-  onLoad: function () {
+  onLoad: function() {
     if (app.globalData.userInfo) {
+      console.log(app.globalData.userInfo)
       this.setData({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true
       })
-    } else if (this.data.canIUse){
+    } else if (this.data.canIUse) {
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
       app.userInfoReadyCallback = res => {

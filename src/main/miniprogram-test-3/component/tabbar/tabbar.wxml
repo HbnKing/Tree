@@ -1,0 +1,9 @@
+<template name="tabbar">
+  <view class='footer'>
+    <view class='footer_list' wx:for="{{listInfo}}" data-current="{{index}}" wx:key="this" bindtap="chooseImg">
+      <image class="footer-image" hidden='{{curIdx===index}}' src="{{item.imgUrl}}"></image>
+      <image class="footer-image" hidden='{{curIdx!==index}}' src="{{item.curUrl}}"></image>
+      <view class="footer-text">{{item.title}}</view>
+    </view>
+  </view>
+</template>

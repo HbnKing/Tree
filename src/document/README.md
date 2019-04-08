@@ -21,6 +21,16 @@
 3.本身人员关系的管理 
 4.需要获取注册者 的个人信息 （头像 ，微信昵称，绑定手机号等）
 
+###  登陆问题 
+
+打开 小程序显示主页   
+是需要使用小程序 跳转 授权登录页面 
+已经授权登录的用户 可以直接 获取用户信息 getUserInfo，getsessionke ，缓存起来 。不用再次登录  
+
+个人思考 1.先去让小程序 获取session 
+如果  可以获取session  则 session 验证 
+如果没有session  则 wx.login()
+登录 并将 session  保存在 服务器端 和 微信本地
 
 
 ###  相关功能说明
@@ -38,6 +48,40 @@
 
 https://wenku.baidu.com/view/4f7e2c34c8d376eeafaa3111.html
 
+
+###  相关文件说明 
+
+app.js   程序主入口 只会加载一次   
+相关方法说明 （官方文档）  
+
+onLaunch	Function	生命周期函数–监听小程序初始化	当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
+onShow	Function	生命周期函数–监听小程序显示	当小程序启动，或从后台进入前台显示，会触发 onShow
+onHide	Function	生命周期函数–监听小程序隐藏	当小程序从前台进入后台，会触发 onHide
+onError	Function	错误监听函数	当小程序发生脚本错误，或者 api 调用失败时，会触发 onError 并带上错误信息
+其他	Any		开发者可以添加任意的函数或数据到 Object 参数中，内部 用 this 可以访问 ,外部用 getApp() 访问  
+
+app.js  通用模块 我们需要实现的功能  这里 获取 session  获取授权情况  并保存在app.js 的变量里 
+
+login.js 主要的登录模块 调用微信自带的登录 方法，如 wx.login() .并调用后台  返回状态 
+
+session.js 主要是 验证会话 保存 会话 和 opnenid  。后台验证 。
+
+list.js  调用后 展示 列表页面。 如 当前所展示 
+
+
+images 包 。里面主要为  图像素材，其名称应该具有实际意义 ，并使用英文名称标准。
+
+component  通用的模块 。比如一些常量的定义 。 导航栏等等 。
+
+start.js  进入程序 的 页面   点击授权登录后 进入主页 
+
+
+###  注意事项 
+wxss  样式 如 定义 宽度 高度 像素 请使用rpx  .(以iphone6为 样式 )
+
+  
+
+ 
 
 
 

@@ -1,3 +1,6 @@
+<import src ="../../component/tabbar/tabbar.wxml"/>
+<template is="tabbar" data="{{listInfo,curIdx}}"/>
+
 <!--index.wxml-->
 <view class="container">
   <view class="userinfo">

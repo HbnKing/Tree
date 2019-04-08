@@ -1,5 +1,4 @@
 /**index.wxss**/
-@import "../../component/tabbar/tabbar.wxss";
 .userinfo {
   display: flex;
   flex-direction: column;
