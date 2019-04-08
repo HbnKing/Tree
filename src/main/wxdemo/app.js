@@ -38,7 +38,8 @@ App({
   },
   globalData: {
     userInfo: null,
-    sessionId:null
+    sessionId:null,
+    islogin:true
   }
 
 

@@ -87,11 +87,10 @@ Page({
 
           // 调用后端，获取微信的session_key, secret  需要测试该 data{}  传值方法
           wx.request({
-            url: "http://localhost:9010/wxLogin",
+            url: "http://localhost:9010/wxLogin?code="+code,
             method: "POST",
-            data: {
-              'code': code
-            },
+            //data: {
+            //  'code': code},
             success: function(result) {
               console.log("result header is :");
               console.log( result.header);
