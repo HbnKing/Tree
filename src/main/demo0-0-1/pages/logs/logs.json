@@ -1,0 +1,7 @@
+{
+  "enablePullDownRefresh": true,
+      "navigationStyle": "custom",
+  "navigationBarTitleText": "予定",
+   
+  "usingComponents": {}
+}

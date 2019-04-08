@@ -1,0 +1,23 @@
+
+ <view class="kuai" bindtap="delete" >+</view>
+<view class="delete_list">
+  
+  
+  
+  <view class="list" wx:for="{{listData}}" wx:key="{{index}}}" bindtouchstart="touchstart" bindtouchmove="touchmove" bindtouchend="touchend" data-index="{{index}}">
+ 
+ 
+ 
+   <view class="content" style="{{activeIndex===index?list_style:''}}">{{item.day}}</view>
+    <view class="contents" style="{{activeIndex===index?list_style:''}}">{{item.name}}</view>
+     <view class="contentss" style="{{activeIndex===index?list_style:''}}">{{item.live}}</view>
+   
+
+
+
+    
+    <view class="delete" bindtap="delete" style="{{activeIndex===index?list_style:''}}">删除</view>
+  </view>
+
+
+</view>
