@@ -1,6 +1,7 @@
 {
-
-  "usingComponents": {"tabbar": "../../custom-tab-bar/index"},
-  "navigationBarTitleText": "index",
-  "enablePullDownRefresh": true
+  "usingComponents": {
+    "searchbar": "/components/searchbar/searchbar",
+    "stars": "/components/stars/stars",
+    "indexmodule": "/components/indexmodule/indexmodule"
+  }
 }
