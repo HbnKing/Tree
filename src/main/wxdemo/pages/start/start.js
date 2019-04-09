@@ -16,6 +16,7 @@ Page({
     
   },
   bindGetUserInfo: function (e) {
+    console.log(e)
     if (e.detail.userInfo) {
       console.log(e)
       //用户按了允许授权按钮

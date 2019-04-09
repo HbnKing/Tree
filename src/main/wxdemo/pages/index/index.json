@@ -2,6 +2,8 @@
   "usingComponents": {
     "searchbar": "/components/searchbar/searchbar",
     "stars": "/components/stars/stars",
-    "indexmodule": "/components/indexmodule/indexmodule"
+    "indexmodule": "/components/indexmodule/indexmodule",
+    "tabbar":"/components/tabbar/tabbar"
   }
+
 }

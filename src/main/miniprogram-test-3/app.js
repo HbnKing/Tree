@@ -45,7 +45,7 @@ App({
   onError(msg) {
     console.log(msg)
   },
-  globalData: 'I am global data'
+  globalData:{}
   
   
 })

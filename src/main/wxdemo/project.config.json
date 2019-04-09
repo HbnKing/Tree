@@ -14,11 +14,11 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.6.5",
 	"appid": "wx840572e0f601a9da",
-	"projectname": "%E8%87%AA%E5%AE%9A%E4%B9%89%20tabBar",
+	"projectname": "wxdemo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
-	"isGameTourist": false,
+	"scripts": {},
 	"condition": {
 		"search": {
 			"current": -1,
@@ -28,8 +28,11 @@
 			"current": -1,
 			"list": []
 		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
 		"game": {
-			"currentL": -1,
 			"list": []
 		},
 		"miniprogram": {

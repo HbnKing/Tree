@@ -28,7 +28,7 @@ Page({
   onShow: function () {
     var that = this;
     wx.request({
-      url: "http://127.0.0.1:9010/demo/superadmin/listarea",
+      url: "http://127.0.0.1:9010/superadmin/listarea",
       data: {},
       method: 'GET',
       success: function (res) {
@@ -97,7 +97,7 @@ Page({
         if (sm.confirm) {
           // 用户点击了确定 可以调用删除方法了
           wx.request({
-            url: "http://127.0.0.1:9010/demo/superadmin/removearea",
+            url: "http://127.0.0.1:9010/superadmin/removearea",
             data: { "areaId": e.target.dataset.areaid },
             method: 'GET',
             success: function (res) {

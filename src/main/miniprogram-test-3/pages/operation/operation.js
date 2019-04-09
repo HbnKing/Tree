@@ -8,8 +8,8 @@ Page({
     areaId: undefined,
     areaName: '',   
     priority: '',
-    addUrl: "http://127.0.0.1:9010/demo/superadmin/addarea",
-    modifyUrl: "http://127.0.0.1:9010/demo/superadmin/modifyarea"
+    addUrl: "http://127.0.0.1:9010/superadmin/addarea",
+    modifyUrl: "http://127.0.0.1:9010/superadmin/modifyarea"
 
   },
   /**
@@ -25,7 +25,7 @@ Page({
       return;
     }
     wx.request({
-      url: "http://127.0.0.1:9010/demo/superadmin/getareabyid",
+      url: "http://127.0.0.1:9010/superadmin/getareabyid",
       data: { "areaId": options.areaId },
       method: 'GET',
       success: function (res) {

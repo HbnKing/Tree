@@ -1,9 +1,9 @@
 {
   "pages": [
+    "pages/list/list",
     "pages/index/index",
     "pages/logs/logs",
     "pages/wxlogin/wxlogin",
-    "pages/list/list",
     "pages/test/test",
     "pages/operation/operation",
     "pages/look/look",

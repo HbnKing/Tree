@@ -11,16 +11,16 @@ Component({
         text: "主页"
       },
       {
-      pagePath: "/index/index",
-      iconPath: "/image/icon_component.png",
-      selectedIconPath: "/image/icon_component_HL.png",
-      text: "组件"
-    }, {
         pagePath: "/pages/logs/logs",
-      iconPath: "/image/icon_API.png",
-      selectedIconPath: "/image/icon_API_HL.png",
-      text: "接口"
-    }]
+        iconPath: "/image/icon_component.png",
+        selectedIconPath: "/image/icon_component_HL.png",
+        text: "组件"
+      }, {
+        pagePath: "/pages/logs/logs",
+        iconPath: "/image/icon_API.png",
+        selectedIconPath: "/image/icon_API_HL.png",
+        text: "接口"
+      }]
   },
   attached() {
   },
@@ -28,7 +28,7 @@ Component({
     switchTab(e) {
       const data = e.currentTarget.dataset
       const url = data.path
-      wx.switchTab({url})
+      wx.switchTab({ url })
       this.setData({
         selected: data.index
       })

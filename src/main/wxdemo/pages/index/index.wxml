@@ -8,3 +8,6 @@
 
 <!-- 综艺 -->
 <indexmodule title="综艺" items="{{shows}}" moreurl="/pages/list/list?type=show" type="show"></indexmodule>
+
+<!-- 综艺 -->
+<tabbar title="tabbar" ></tabbar>
