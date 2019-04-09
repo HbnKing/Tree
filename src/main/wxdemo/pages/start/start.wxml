@@ -16,7 +16,7 @@
 
        
 
-          <button class='confirm-btn' type='primary' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+          <button class='confirm-btn' type='primary' wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo"> 
             授权登录
           </button>
           <text class="copyright">@qindiandadudu 贡献本页代码</text>

@@ -8,13 +8,13 @@ App({
     logs.unshift(Date.now())
     //wx.setStorageSync('logs', logs)
     this.globalData.sessionId = wx.getStorageSync("sessionId")
-    console.log("session is : " +this.globalData.sessionId)
+    //console.log("session is : " +this.globalData.sessionId)
 
     wx.getUserInfo({
       withCredentials: true,
       success: function (res) {
         //此处为获取微信信息后的业务方法
-        wx.switchTab({
+        wx.redirectTo({
           url: '/pages/index/index',
         })
       },
@@ -24,12 +24,15 @@ App({
           title: '警告',
           content: '尚未进行授权，请点击确定跳转到授权页面进行授权。',
           success: function (res) {
-            if (res.confirm) {
-              console.log('用户点击确定')
-              wx.navigateTo({
-                url: '/pages/start/start',
-              })
-            }
+            wx.redirectTo({
+                 url: '/pages/start/start',
+               })
+            // if (res.confirm) {
+            //   console.log('用户点击确定')
+            //   wx.navigateTo({
+            //     url: '/pages/start/start',
+            //   })
+            // }
           }
         })
       }

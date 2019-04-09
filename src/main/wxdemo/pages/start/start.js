@@ -4,26 +4,81 @@ var app = getApp();
 Page({
 
   data: {
+    //判断小程序的API，回调，参数，组件等是否在当前版本可用。
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     remind: '加载中',
     angle: 0,
     userInfo: {},
+  },
+
+  onLoad: function () {
+   
     
   },
-  goToIndex: function() {
-    wx.switchTab({
-      url: '/pages/index/index',
+  bindGetUserInfo: function (e) {
+    if (e.detail.userInfo) {
+      console.log(e)
+      //用户按了允许授权按钮
+      var that = this;
+      //插入登录的用户的相关信息到数据库
+      // 未完成
+      // wx.request({
+      //   url: app.globalData.urlPath + 'user/add',
+      //   data: {
+      //     openid: getApp().globalData.openid,
+      //     nickName: e.detail.userInfo.nickName,
+      //     avatarUrl: e.detail.userInfo.avatarUrl,
+      //     province: e.detail.userInfo.province,
+      //     city: e.detail.userInfo.city
+      //   },
+      //   header: {
+      //     'content-type': 'application/json'
+      //   },
+      //   success: function (res) {
+      //     //从数据库获取用户信息
+      //     that.queryUsreInfo();
+      //     console.log("插入小程序登录用户信息成功！");
+      //   }
+      // });
+      //授权成功后，跳转进入小程序首页
+      wx.redirectTo({
+        url: '/pages/index/index'
+      })
+    } else {
+      //用户按了拒绝按钮
+      wx.showModal({
+        title: '警告',
+        content: '您点击了拒绝授权，将无法进入小程序，请授权之后再进入!!!',
+        showCancel: false,
+        confirmText: '返回授权',
+        success: function (res) {
+          if (res.confirm) {
+            console.log('用户点击了“返回授权”')
+          }
+        }
+      })
+    }
+  },
+  //获取用户信息接口
+  queryUsreInfo: function () {
+    wx.request({
+      url: "http://localhost:9010/wxLogin?code="+code,
+      method: "POST",
+      // data: {
+      //  openid: app.globalData.openid
+      // },
+      header: {
+        'content-type': 'application/json'
+      },
+      success: function (res) {
+        console.log(res.data);
+        getApp().globalData.userInfo = res.data;
+      }
     });
   },
 
-  
-  onLoad: function() {
-    var that = this
-    wx.setNavigationBarTitle({
-      title: wx.getStorageSync('mallName')
-    });
-    
-  },
+
+
   onShow: function() {
     let that = this
     let userInfo = wx.getStorageSync('userInfo')
@@ -64,14 +119,6 @@ Page({
     });
   },
 
-  //  点击后的登录页面 
-  bindGetUserInfo(e) {
-    console.log(e.detail.userInfo);
-    this.doLogin(e);
-
-    //随后跳转页面
-    this.goToIndex()
-  },
 
   // 登录   的 方法
   doLogin: function(e) {
@@ -85,8 +132,9 @@ Page({
         console.log(res.header)
         console.log(res)
         var code = res.code;
-        console.log("res.code is :" + code);
+        
         if (code) {
+          
 
           // 调用后端，获取微信的session_key, secret  需要测试该 data{}  传值方法
           wx.request({
@@ -110,7 +158,10 @@ Page({
 
               wx.setStorageSync('sessionId', sessionId);
               app.globalData.sessionId = sessionId;
-              console.log(app)
+              console.log(app);
+              wx.redirectTo({
+                url: '/pages/index/index',
+              });
             }
           });
           
